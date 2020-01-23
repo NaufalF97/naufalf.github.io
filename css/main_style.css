@@ -1,0 +1,364 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'roboto';
+    font-size: 12px;
+    background: #272727;
+}
+
+.container {
+    background: #131313;
+    align-items: center;
+    margin: 5% auto;
+    box-sizing: border-box;
+    border-radius: 35px;
+    padding: 5%;
+    text-align: center;
+}
+
+header {
+    background-image: url(../img/background_banner.jpg);
+    margin: 0;
+    padding-top: 5%;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.main {
+    width: 80%;
+    border: solid 3px #b7ff00;
+}
+/* Nav */
+
+/* Banner */
+.banner_info {
+    text-align: center;
+}
+
+.banner_info h1 {
+    font-family: 'sunglass';
+    font-size: 6em;
+    text-align: center;
+    color: #979494;
+    margin-bottom: 1%;
+
+}
+
+.banner_info h3 {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: #535151;
+}
+
+.banner_info a {
+    text-decoration: none;
+    color: #979494;
+    margin: 2% 5%;
+    font-size: 1.5em;
+}
+
+.banner_info a:hover {
+    color: #b7ff00;
+    transition: all 0.3s;
+    font-size: 1.7em;
+}
+
+.banner_info .icon {
+    margin-right: 0.5%;
+}
+
+/* Profile */
+.profile h1,
+.background h1,
+.abilities h1 {
+    font-size: 4.5em;
+    color: #979494;
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+
+.profile_photo img {
+    border: solid 8px #979494;
+    border-radius: 35px;
+    margin-bottom: 3%;
+}
+
+.profile .quote {
+    background-color: #000000;
+    text-align: center;
+    padding: 11% 1%;
+    border-radius: 50%;
+    color: #b7ff00;
+}
+
+.identity {
+    margin-top: 3%;
+    color: #979494;
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+.identity .left {
+    text-align: right;
+}
+
+.identity .right {
+    text-align: left;
+}
+
+.identity .right::before {
+    content: ":";
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+/* Background */
+/* Education */
+.background h2,
+.abilities h2 {
+    color: #979494;
+    font-size: 2.5em;
+    margin-bottom: 2%;   
+}
+
+.background .edu {
+    display: inline-block;
+    color: #979494;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.background .edu li {
+    width: 31%;
+    height: 100%;
+    margin: 1%;
+    float: left;
+    padding: 2%;
+}
+
+.background .edu li:hover {
+    font-size: 1.1em;
+}
+
+.background .edu_black {
+    background-color: #000000;
+    border-radius: 35px;
+}
+
+.background .edu_yellow {
+    background-color: #b7ff00;
+    border-radius: 35px;
+}
+
+.background .edu .date_black {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.background .edu .date_yellow {
+    color: #b7ff00;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.background .edu .title {
+    color: #979494;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+}
+
+.background .edu .description {
+    margin-bottom: 3%;
+    font-size: 1.3em;
+}
+
+/* Organization */
+.organ {
+    display: inline-block;
+    text-align: left;
+    color: #979494;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+}
+
+.organ .organ_yellow {
+    background-color: #b7ff00;
+    border-radius: 35px;
+}
+
+.organ .organ_black {
+    background-color: #000000;
+    border-radius: 35px;
+}
+
+.organ li {
+    width: 48%;
+    margin: 1%;
+    height: 100%;
+    float: left;
+    padding: 2%;
+}
+
+.organ li:hover {
+    font-size: 1.1em;
+}
+
+.organ .date_black {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.organ .date_yellow {
+    color: #b7ff00;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.organ .title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1%;
+    color: #979494;
+}
+
+.organ .description {
+    font-size: 1.3em;
+    color: #979494;
+}
+
+/* Abilities */
+.abilities p {
+    color: #979494;
+    font-size: 1.8em;
+    margin-bottom: 15%;
+} 
+
+.abilities .jquery {
+    align-items: baseline;
+}
+
+.hr_abilities {
+    width: 60%;
+    border: solid 1px #979494;
+}
+
+/* Footer */
+footer {
+    background-image: url(../img/footer.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+footer .btn{
+    width: 20%;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #979494;
+    border: none;
+}
+
+footer .btn:hover {
+    background-color: #b7ff00;
+    font-size: 2em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .background .edu li{
+        width: 100%;
+        margin-left: -2%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .profile_photo {
+        width: 100%;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    .quote h3 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .organ li {
+        width: 100%;
+    }
+
+    .identity {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .banner_info a {
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .banner_info span {
+        display: none;
+    }
+
+    .banner_info a {
+        margin: 2% 1%;
+    }
+
+    footer .btn {
+        font-size: 1.3em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:520px) {
+    body {
+        font-size: 9px;
+    }
+
+    .banner_info h3 {
+        font-size: 2em;
+    }
+
+    .profile_photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .quote h3 {
+        font-size: 1.5em;
+    }
+
+    .edu {
+        margin-right: 2%;
+        margin-left:-10%;
+    }
+
+    .organ {
+        margin-right: 5%;
+        margin-left: -12%;
+    }
+}
