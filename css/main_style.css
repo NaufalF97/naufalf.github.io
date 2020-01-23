@@ -35,6 +35,9 @@ li {
     border: solid 3px #b7ff00;
 }
 /* Nav */
+.fxp-sidebar {
+    background-color: #131313;
+}
 
 /* Banner */
 .banner_info {
@@ -95,6 +98,7 @@ li {
     text-align: center;
     padding: 11% 1%;
     border-radius: 50%;
+    margin-top: -2%;
     color: #b7ff00;
 }
 
@@ -274,8 +278,13 @@ footer .btn{
 }
 
 footer .btn:hover {
-    background-color: #b7ff00;
     font-size: 2em;
+    background-color: #979494 !important;
+}
+
+footer .btn:focus {
+background-color: #b7ff00 !important;
+border-color: #979494 !important;
 }
 
 /* Media Queries */
