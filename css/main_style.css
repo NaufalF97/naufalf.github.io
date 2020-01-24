@@ -20,9 +20,10 @@ body {
 }
 
 header {
-    background-image: url(../img/background_banner.jpg);
+    background-image: url(../img/330328.jpg);
     margin: 0;
-    padding-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 12%;
     width: 100%;
 }
 
@@ -42,6 +43,7 @@ li {
 /* Banner */
 .banner_info {
     text-align: center;
+    margin-bottom: ;
 }
 
 .banner_info h1 {
@@ -63,7 +65,10 @@ li {
 .banner_info a {
     text-decoration: none;
     color: #979494;
-    margin: 2% 5%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
     font-size: 1.5em;
 }
 
@@ -75,6 +80,12 @@ li {
 
 .banner_info .icon {
     margin-right: 0.5%;
+}
+
+.banner_info .arrow {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 1em;
 }
 
 /* Profile */
@@ -314,6 +325,10 @@ border-color: #979494 !important;
         width: 100%;
     }
 
+    .quote {
+        margin-top: 3% !important;
+    }
+
     .identity {
         font-size: 1.5em;
     }
@@ -369,5 +384,15 @@ border-color: #979494 !important;
     .organ {
         margin-right: 5%;
         margin-left: -12%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer .btn {
+        font-size: 1em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.1em;
     }
 }
