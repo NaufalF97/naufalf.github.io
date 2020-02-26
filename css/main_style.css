@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'roboto';
+    font-family: 'Roboto';
     font-size: 12px;
     background: #272727;
 }
@@ -46,12 +46,13 @@ li {
 }
 
 .banner_info h1 {
-    font-family: 'sunglass';
-    font-size: 6em;
+    font-family: 'Italianno';
+    font-weight: bold;
+    font-size: 10em;
     text-align: center;
-    color: #979494;
+    color: #797979;
     margin-bottom: 1%;
-
+    margin-top: 0;
 }
 
 .banner_info h3 {
@@ -357,7 +358,7 @@ border-color: #979494 !important;
     }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:545px) {
     body {
         font-size: 9px;
     }
