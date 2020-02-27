@@ -251,7 +251,7 @@ li {
     float: left;
     padding: 2%;
     opacity: 0;
-    transition: transform 0.9s;
+    transition: all 0.8s;
     transform: translateY(-40px);
 }
 
