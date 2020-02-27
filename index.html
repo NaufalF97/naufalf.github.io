@@ -298,13 +298,30 @@
             $(".cdev").circlos();
         });
 
-
         $(window).scroll(function() {
+            // header
             var winScroll = $(this).scrollTop();
 
             $('.banner_info').css ({
                 'transform' : 'translate(0px, '+ winScroll/10 +'%)'
             })
+
+            // edu dan organ
+            if(winScroll > $('.background').offset().top - 250) {
+                $('.background .edu li').each(function(i) {
+                    setTimeout(function() {
+                        $('.background .edu li').eq(i).addClass('muncul');
+                    }, 300 * (i+1))
+                })
+            }
+
+            if(winScroll > $('#organ-exp').offset().top -300) {
+                $('.organ li').each(function(i) {
+                    setTimeout(function() {
+                        $('.organ li').eq(i).addClass('muncul');
+                    }, 300 * (i+1))
+                })
+            }
         })
     </script>
 

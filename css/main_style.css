@@ -165,10 +165,24 @@ li {
     margin: 1%;
     float: left;
     padding: 2%;
+    opacity: 0;
+    transition: all 0.8s;
+    transform: translateY(-40px);
+}
+
+.background .edu li.muncul {
+    width: 31%;
+    height: 100%;
+    margin: 1%;
+    float: left;
+    padding: 2%;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .background .edu li:hover {
     font-size: 1.1em;
+    transition: 0.2s;
 }
 
 .background .edu_black {
@@ -236,10 +250,24 @@ li {
     height: 100%;
     float: left;
     padding: 2%;
+    opacity: 0;
+    transition: transform 0.9s;
+    transform: translateY(-40px);
+}
+
+.organ li.muncul {
+    width: 48%;
+    margin: 1%;
+    height: 100%;
+    float: left;
+    padding: 2%;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .organ li:hover {
     font-size: 1.1em;
+    transition: 0.2s;
 }
 
 .organ .date_black {
