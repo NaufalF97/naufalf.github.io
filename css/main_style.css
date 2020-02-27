@@ -97,13 +97,15 @@ li {
 }
 
 .profile_photo img {
-    border: solid 8px #979494;
+    border: solid 5px #222222;
+    box-shadow: 2px 2px 5px #b7ff00;
     border-radius: 35px;
     margin-bottom: 3%;
 }
 
 .profile .quote {
     background-color: #000000;
+    box-shadow: 3px 3px 8px #000000;
     text-align: center;
     padding: 11% 1%;
     border-radius: 50%;
