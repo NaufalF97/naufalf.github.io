@@ -171,11 +171,13 @@ li {
 
 .background .edu_black {
     background-color: #000000;
+    box-shadow: 3px 3px 8px #000000;
     border-radius: 35px;
 }
 
 .background .edu_yellow {
     background-color: #b7ff00;
+    box-shadow: 3px 3px 8px #000000;
     border-radius: 35px;
 }
 
@@ -216,11 +218,13 @@ li {
 
 .organ .organ_yellow {
     background-color: #b7ff00;
+    box-shadow: 3px 3px 8px #000000;
     border-radius: 35px;
 }
 
 .organ .organ_black {
     background-color: #000000;
+    box-shadow: 3px 3px 8px #000000;
     border-radius: 35px;
 }
 
