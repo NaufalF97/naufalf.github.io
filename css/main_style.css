@@ -244,6 +244,10 @@ li {
     border-radius: 20px;
 }
 
+.organ_black .description {
+    margin-bottom: 40px;
+}
+
 .organ li {
     width: 48%;
     margin: 1%;
