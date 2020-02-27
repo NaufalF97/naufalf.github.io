@@ -154,7 +154,7 @@ li {
 
 .background .edu {
     display: inline-block;
-    color: #979494;
+    color: #707070;
     text-align: left;
     margin-bottom: 5%;
 }
@@ -212,7 +212,7 @@ li {
 }
 
 .background .edu .title {
-    color: #979494;
+    color: #585757;
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 1.5%;
@@ -292,12 +292,12 @@ li {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 1%;
-    color: #979494;
+    color: #585757;
 }
 
 .organ .description {
     font-size: 1.3em;
-    color: #979494;
+    color: #707070;
 }
 
 /* Abilities */
