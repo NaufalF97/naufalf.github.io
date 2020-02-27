@@ -297,6 +297,15 @@
             // init
             $(".cdev").circlos();
         });
+
+
+        $(window).scroll(function() {
+            var winScroll = $(this).scrollTop();
+
+            $('.banner_info').css ({
+                'transform' : 'translate(0px, '+ winScroll/15 +'%)'
+            })
+        })
     </script>
 
 
