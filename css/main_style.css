@@ -74,6 +74,7 @@ li {
 
 .banner_info a:hover {
     color: #b7ff00;
+    text-shadow: 0.5px 0.5px 0.5px #b7ff00;
     transition: all 0.3s;
     font-size: 1.7em;
 }
