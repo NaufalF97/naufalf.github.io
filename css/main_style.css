@@ -139,14 +139,16 @@ li {
 /* Background */
 /* Education */
 .background h1,
-.abilities h1 {
+.abilities h1,
+.portfolio h1 {
     font-size: 4.5em;
     color: #979494;
     margin-top: 0;
     margin-bottom: 8px;
 }
 .background h2,
-.abilities h2 {
+.abilities h2,
+.portfolio h2 {
     color: #979494;
     font-size: 2.5em;
     margin-bottom: 28px;   
@@ -314,6 +316,31 @@ li {
 .hr_abilities {
     width: 60%;
     border: solid 1px #979494;
+}
+
+/*Portfolio */
+.owl-carousel {
+    max-width: 75%;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+.hr_portfolio {
+    width: 60%;
+    border: solid 1px #979494;
+    margin-top: 50px;
+}
+
+.portfolio h3 {
+    background-color: #000000;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    color: #707070;
+    font-size: 1.8em;
+    box-shadow: 3px 3px 8px #000000;
 }
 
 /* Footer */

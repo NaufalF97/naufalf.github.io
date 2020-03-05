@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/sidebar-bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="icon" href="img/First_Logo.png">
 </head>
 
@@ -23,27 +25,28 @@
 
         <div class="fxp-sidebar fxp-sidebar-default" data-sidebar="true" data-toggle-id="sidebar-toggle-left">
             <ul class="fxp-sidebar-menu">
-              <li class="fxp-sidebar-group"><span>Menu</span>
-                <ul class="fxp-sidebar-group-menu">
-                  <li class="fxp-sidebar-item"><a href="#home">Home</a></li>
-                  <li class="fxp-sidebar-item"><a href="#profile">Profile</a></li>
-                  <li class="fxp-sidebar-item"><a href="#background">Background</a></li>
-                  <li class="fxp-sidebar-item"><a href="#abilities">Abilities</a></li>
-                </ul>
-              </li>
+                <li class="fxp-sidebar-group"><span>Menu</span>
+                    <ul class="fxp-sidebar-group-menu">
+                        <li class="fxp-sidebar-item"><a href="#home">Home</a></li>
+                        <li class="fxp-sidebar-item"><a href="#profile">Profile</a></li>
+                        <li class="fxp-sidebar-item"><a href="#background">Background</a></li>
+                        <li class="fxp-sidebar-item"><a href="#abilities">Abilities</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="btn btn-default navbar-toggle fxp-sidebar-btn-toggle-left" id="sidebar-toggle-left">
+                    <button type="button" class="btn btn-default navbar-toggle fxp-sidebar-btn-toggle-left"
+                        id="sidebar-toggle-left">
                         <i class="fa fa-bars"></i>
                     </button>
                 </div>
             </div>
         </nav>
-          
+
         <div class="banner_info">
             <h1>Naufal Firaas</h1>
             <h3>a Front-End Web Developer</h3>
@@ -275,6 +278,57 @@
                     </div>
                 </div>
             </section>
+
+            <hr class="main">
+
+            <section class="portfolio" id="portfolio">
+                <h1>Portfolio</h1>
+                <h3>Just some of my personal project. Swipe to watch the gallery or tap to visit the site..</h3>
+
+                <hr class="hr_portfolio">
+
+                <h2 class="comp-profile">Simple Company Profile</h2>
+                <div class="owl-carousel">
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/simple-company-profile/" target="_blank">
+                            <img src="img/company-profile-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/simple-company-profile/" target="_blank">
+                            <img src="img/company-profile-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/simple-company-profile/" target="_blank">
+                            <img src="img/company-profile-3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="hr_portfolio">
+
+                <h2 class="game-suit">Game Suit Jawa</h2>
+                <div class="owl-carousel">
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/game-suit-jawa-sederhana/" target="_blank">
+                            <img src="img/game-suit-jawa-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/game-suit-jawa-sederhana/" target="_blank">
+                            <img src="img/game-suit-jawa-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="https://naufalfiraas.github.io/game-suit-jawa-sederhana/" target="_blank">
+                            <img src="img/game-suit-jawa-3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
         </div>
     </article>
 
@@ -292,37 +346,62 @@
     <!-- nav -->
     <script src="js/sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script>
         $(document).ready(function () {
             // init
             $(".cdev").circlos();
         });
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             // header
             var winScroll = $(this).scrollTop();
 
-            $('.banner_info').css ({
-                'transform' : 'translate(0px, '+ winScroll/10 +'%)'
+            $('.banner_info').css({
+                'transform': 'translate(0px, ' + winScroll / 10 + '%)'
             })
 
             // edu dan organ
-            if(winScroll > $('.background').offset().top - 250) {
-                $('.background .edu li').each(function(i) {
-                    setTimeout(function() {
+            if (winScroll > $('.background').offset().top - 250) {
+                $('.background .edu li').each(function (i) {
+                    setTimeout(function () {
                         $('.background .edu li').eq(i).addClass('muncul');
-                    }, 300 * (i+1))
+                    }, 300 * (i + 1))
                 })
             }
 
-            if(winScroll > $('#organ-exp').offset().top -300) {
-                $('.organ li').each(function(i) {
-                    setTimeout(function() {
+            if (winScroll > $('#organ-exp').offset().top - 300) {
+                $('.organ li').each(function (i) {
+                    setTimeout(function () {
                         $('.organ li').eq(i).addClass('muncul');
-                    }, 300 * (i+1))
+                    }, 300 * (i + 1))
                 })
             }
         })
+
+        // Carousel Portfolio
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            lazyLoad: true,
+            merge: true,
+            video: true,
+            responsive: {
+                480: {
+                    items: 1
+                },
+
+                678: {
+                    items: 1
+                },
+
+                960: {
+                    items: 1
+                }
+            }
+        });
     </script>
 
 
