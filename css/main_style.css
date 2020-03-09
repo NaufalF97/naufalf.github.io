@@ -411,6 +411,14 @@ border-color: #979494 !important;
     .quote h3 {
         font-size: 2em;
     }
+
+    .portfolio h3 {
+        width: 70%;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -501,5 +509,14 @@ border-color: #979494 !important;
 
     footer .btn:hover {
         font-size: 1.1em;
+    }
+
+    .portfolio h3 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 15px;
     }
 }
