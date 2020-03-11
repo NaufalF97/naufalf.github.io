@@ -154,75 +154,66 @@ li {
     margin-bottom: 28px;   
 }
 
-.background .edu {
-    display: inline-block;
-    color: #707070;
-    text-align: left;
-    margin-bottom: 5%;
+.edu-box {
+    margin-top: -38px;
+    margin-bottom: 10px;
 }
 
-.background .edu li {
-    width: 31%;
-    height: 100%;
-    margin: 1%;
-    float: left;
-    padding: 2%;
-    opacity: 0;
-    transition: all 0.8s;
-    transform: translateY(-40px);
+.edu-col {
+    margin-bottom: 20px;
 }
 
-.background .edu li.muncul {
-    width: 31%;
-    height: 100%;
-    margin: 1%;
-    float: left;
-    padding: 2%;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.background .edu li:hover {
-    font-size: 1.1em;
-    transition: 0.2s;
-}
-
-.background .edu_black {
+.edu-black {
     background-color: #000000;
-    box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    box-shadow: 3px 3px 8px #000000;
 }
 
-.background .edu_yellow {
+.edu-yellow {
     background-color: #b7ff00;
-    box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    box-shadow: 3px 3px 8px #000000;
 }
 
-.background .edu .date_black {
-    color: #000000;
+.edu-black:hover,
+.edu-yellow:hover {
+    transform: translateY(-5px);
+}
+
+.date-yellow {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 1%;
-}
-
-.background .edu .date_yellow {
     color: #b7ff00;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 1%;
 }
 
-.background .edu .title {
-    color: #585757;
+.date-black {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.edu-black h3,
+.edu-yellow h3 {
     font-size: 1.8em;
     font-weight: bold;
+    color: #585757;
     margin-bottom: 1.5%;
 }
 
-.background .edu .description {
-    margin-bottom: 3%;
+.edu-black .description,
+.edu-yellow .description {
     font-size: 1.3em;
+    margin-bottom: 3%;
 }
 
 /* Organization */
