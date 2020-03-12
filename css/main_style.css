@@ -199,14 +199,9 @@ li {
 
 .edu-black:hover,
 .edu-yellow:hover {
-    cursor: grab;
-}
-
-.edu-black:active,
-.edu-yellow:active {
+    cursor: pointer;
     transform: rotateX(180deg);
-    transition: transform 0.8s;
-    cursor: grabbing;
+    transition: transform 0.8s ease-in-out;
 }
 
 .edu-col .date-yellow {
@@ -382,14 +377,9 @@ li {
 
 .organ-black:hover,
 .organ-yellow:hover {
-    cursor: grab;
-}
-
-.organ-black:active,
-.organ-yellow:active {
+    cursor: pointer;
     transform: rotateY(180deg);
     transition: transform 0.8s ease-in-out;
-    cursor: grabbing;
 }
 
 /* Abilities */
