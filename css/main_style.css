@@ -172,6 +172,7 @@ li {
 }
 
 .edu-black {
+    display: relative;
     background-color: #000000;
     border-radius: 20px;
     padding: 10px;
@@ -179,9 +180,12 @@ li {
     height: 100%;
     box-sizing: border-box;
     box-shadow: 3px 3px 8px #000000;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .edu-yellow {
+    display: relative;
     background-color: #b7ff00;
     border-radius: 20px;
     padding: 10px;
@@ -189,31 +193,44 @@ li {
     height: 100%;
     box-sizing: border-box;
     box-shadow: 3px 3px 8px #000000;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .edu-black:hover,
 .edu-yellow:hover {
-    transform: translateY(-5px);
-    transition: transform 0.2s;
+    transform: rotateX(180deg);
+    transition: transform 0.5s;
 }
 
-.date-yellow {
-    font-size: 1.5em;
+.edu-col .date-yellow {
+    margin-top: 20px;
+    font-size: 2em;
     font-weight: bold;
     color: #b7ff00;
 }
 
-.date-black {
-    font-size: 1.5em;
+.edu-col .date-black {
+    margin-top: 20px;
+    font-size: 2em;
     font-weight: bold;
     color: #000000;
 }
 
-.edu-col h3 {
-    font-size: 1.8em;
+.edu-yellow h3 {
+    font-size: 2.8em;
     font-weight: bold;
     color: #585757;
-    margin-bottom: 1.5%;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.edu-black h3 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #585757;
+    margin-top: 90px;
+    margin-bottom: 80px;
 }
 
 .edu-col .description {
@@ -221,6 +238,42 @@ li {
     margin-top: 15px;
     margin-bottom: 3%;
     color: #585757;
+}
+
+.edu-yellow .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 30px 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    background-color: #000000;
+    font-size: 1.1em;
+    box-shadow: 3px 3px 8px #000000;
+    border-radius: 20px;
+}
+
+.edu-black .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 80px 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    background-color: #b7ff00;
+    font-size: 1.3em;
+    box-shadow: 3px 3px 8px #000000;
+    border-radius: 20px;
+}
+
+.edu-black .back.karisma {
+    padding-top: 45px;
 }
 
 /* Organization */
@@ -251,6 +304,18 @@ li {
 .organ-yellow:hover {
     transform: translateY(-5px);
     transition: transform 0.2s;
+}
+
+.organ-col .date-yellow {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #b7ff00;
+}
+
+.organ-col .date-black {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #000000;
 }
 
 .organ-col h3 {
