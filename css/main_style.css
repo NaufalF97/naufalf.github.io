@@ -170,7 +170,6 @@ li {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    transition: transform 0.2s;
     box-shadow: 3px 3px 8px #000000;
 }
 
@@ -181,13 +180,12 @@ li {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    transition: transform 0.2s;
     box-shadow: 3px 3px 8px #000000;
 }
 
-.edu-black:hover,
-.edu-yellow:hover {
+.edu-col:hover {
     transform: translateY(-5px);
+    transition: transform 0.2s;
 }
 
 .date-yellow {
@@ -202,57 +200,60 @@ li {
     color: #000000;
 }
 
-.edu-black h3,
-.edu-yellow h3 {
+.edu-col h3 {
     font-size: 1.8em;
     font-weight: bold;
     color: #585757;
     margin-bottom: 1.5%;
 }
 
-.edu-black .description,
-.edu-yellow .description {
+.edu-col .description {
     font-size: 1.3em;
+    margin-top: 15px;
     margin-bottom: 3%;
 }
 
 /* Organization */
-.organ {
-    display: inline-block;
-    text-align: left;
-    color: #979494;
-    margin-bottom: 3%;
-    box-sizing: border-box;
+.organ-box {
+    text-align: center;
+    margin-top: -28px;
 }
 
-.organ .organ_yellow {
+.organ-yellow {
     background-color: #b7ff00;
     box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
-.organ .organ_black {
+.organ-black {
     background-color: #000000;
     box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
-}
-
-.organ_black .description {
-    margin-bottom: 40px;
-}
-
-.organ li {
-    width: 48%;
-    margin: 1%;
+    width: 100%;
     height: 100%;
-    float: left;
-    padding: 2%;
-    opacity: 0;
-    transition: all 0.8s;
-    transform: translateY(-40px);
+    padding: 10px;
 }
 
-.organ li.muncul {
+.organ-col h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #585757;
+}
+
+.organ-col .description {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.organ-col:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+}
+
+/* .organ li.muncul {
     width: 48%;
     margin: 1%;
     height: 100%;
@@ -260,38 +261,7 @@ li {
     padding: 2%;
     opacity: 1;
     transform: translateY(0);
-}
-
-.organ li:hover {
-    font-size: 1.1em;
-    transition: 0.2s;
-}
-
-.organ .date_black {
-    color: #000000;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 1%;
-}
-
-.organ .date_yellow {
-    color: #b7ff00;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 1%;
-}
-
-.organ .title {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 1%;
-    color: #585757;
-}
-
-.organ .description {
-    font-size: 1.3em;
-    color: #707070;
-}
+} */
 
 /* Abilities */
 .abilities p {
