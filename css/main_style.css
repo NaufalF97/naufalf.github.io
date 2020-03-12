@@ -199,8 +199,14 @@ li {
 
 .edu-black:hover,
 .edu-yellow:hover {
+    cursor: pointer;
+}
+
+.edu-black:active,
+.edu-yellow:active {
     transform: rotateX(180deg);
-    transition: transform 0.5s;
+    transition: transform 0.8s;
+    cursor: pointer;
 }
 
 .edu-col .date-yellow {
@@ -300,11 +306,11 @@ li {
     padding: 10px;
 }
 
-.organ-black:hover,
+/* .organ-black:hover,
 .organ-yellow:hover {
     transform: translateY(-5px);
     transition: transform 0.2s;
-}
+} */
 
 .organ-col .date-yellow {
     font-size: 1.8em;
