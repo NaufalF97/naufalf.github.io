@@ -71,13 +71,13 @@ li {
     margin-right: 5%;
     margin-bottom: 10%;
     font-size: 1.5em;
+    transition: all 0.1s;
 }
 
 .banner_info a:hover {
     color: #b7ff00;
     text-shadow: 0.5px 0.5px 0.5px #b7ff00;
-    transition: all 0.3s;
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 .banner_info .icon {
@@ -155,12 +155,20 @@ li {
 }
 
 .edu-box {
-    margin-top: -38px;
+    margin-top: -30px;
     margin-bottom: 10px;
 }
 
 .edu-col {
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform 0.5s;
+}
+
+.edu-col.muncul {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .edu-black {
@@ -183,7 +191,8 @@ li {
     box-shadow: 3px 3px 8px #000000;
 }
 
-.edu-col:hover {
+.edu-black:hover,
+.edu-yellow:hover {
     transform: translateY(-5px);
     transition: transform 0.2s;
 }
@@ -216,7 +225,7 @@ li {
 /* Organization */
 .organ-box {
     text-align: center;
-    margin-top: -28px;
+    margin-top: -18px;
 }
 
 .organ-yellow {
@@ -237,6 +246,12 @@ li {
     padding: 10px;
 }
 
+.organ-black:hover,
+.organ-yellow:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+}
+
 .organ-col h3 {
     font-size: 1.8em;
     font-weight: bold;
@@ -248,20 +263,16 @@ li {
     margin-top: 15px;
 }
 
-.organ-col:hover {
-    transform: translateY(-5px);
-    transition: transform 0.2s;
+.organ-col {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.5s;
 }
 
-/* .organ li.muncul {
-    width: 48%;
-    margin: 1%;
-    height: 100%;
-    float: left;
-    padding: 2%;
+.organ-col.muncul {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 /* Abilities */
 .abilities p {

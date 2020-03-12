@@ -358,17 +358,17 @@
 
             // edu dan organ
             if (winScroll > $('.background').offset().top - 250) {
-                $('.background .edu li').each(function (i) {
+                $('.edu-col').each(function (i) {
                     setTimeout(function () {
-                        $('.background .edu li').eq(i).addClass('muncul');
+                        $('.edu-col').eq(i).addClass('muncul');
                     }, 300 * (i + 1))
                 })
             }
 
             if (winScroll > $('#organ-exp').offset().top - 300) {
-                $('.organ li').each(function (i) {
+                $('.organ-col').each(function (i) {
                     setTimeout(function () {
-                        $('.organ li').eq(i).addClass('muncul');
+                        $('.organ-col').eq(i).addClass('muncul');
                     }, 300 * (i + 1))
                 })
             }
