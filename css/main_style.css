@@ -199,14 +199,14 @@ li {
 
 .edu-black:hover,
 .edu-yellow:hover {
-    cursor: pointer;
+    cursor: grab;
 }
 
 .edu-black:active,
 .edu-yellow:active {
     transform: rotateX(180deg);
     transition: transform 0.8s;
-    cursor: pointer;
+    cursor: grabbing;
 }
 
 .edu-col .date-yellow {
@@ -289,28 +289,28 @@ li {
 }
 
 .organ-yellow {
+    position: relative;
     background-color: #b7ff00;
     box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .organ-black {
+    position: relative;
     background-color: #000000;
     box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
-
-/* .organ-black:hover,
-.organ-yellow:hover {
-    transform: translateY(-5px);
-    transition: transform 0.2s;
-} */
 
 .organ-col .date-yellow {
     font-size: 1.8em;
@@ -340,11 +340,56 @@ li {
     opacity: 0;
     transform: translateY(-30px);
     transition: all 0.5s;
+    margin-bottom: 20px;
 }
 
 .organ-col.muncul {
     opacity: 1;
     transform: translateY(0);
+}
+
+.organ-yellow .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #000000;
+    font-size: 1.1em;
+    box-shadow: 3px 3px 8px #000000;
+    border-radius: 20px;
+}
+
+.organ-black .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #b7ff00;
+    font-size: 1.3em;
+    box-shadow: 3px 3px 8px #000000;
+    border-radius: 20px;
+}
+
+.organ-black:hover,
+.organ-yellow:hover {
+    cursor: grab;
+}
+
+.organ-black:active,
+.organ-yellow:active {
+    transform: rotateY(180deg);
+    transition: transform 0.8s ease-in-out;
+    cursor: grabbing;
 }
 
 /* Abilities */
