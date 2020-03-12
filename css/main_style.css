@@ -217,9 +217,10 @@ li {
 }
 
 .edu-col .description {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: 15px;
     margin-bottom: 3%;
+    color: #585757;
 }
 
 /* Organization */
@@ -259,8 +260,9 @@ li {
 }
 
 .organ-col .description {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: 15px;
+    color: #585757;
 }
 
 .organ-col {
