@@ -201,7 +201,7 @@ li {
 .edu-yellow:hover {
     cursor: pointer;
     transform: rotateX(180deg);
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.9s ease-in-out;
 }
 
 .edu-col .date-yellow {
@@ -379,7 +379,7 @@ li {
 .organ-yellow:hover {
     cursor: pointer;
     transform: rotateY(180deg);
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.9s ease-in-out;
 }
 
 /* Abilities */
