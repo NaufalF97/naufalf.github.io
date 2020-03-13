@@ -1,5 +1,5 @@
 /* Media Queries */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 995px) {
     #organ-exp {
         margin-top: 20px;
         margin-bottom: 15px;
@@ -12,6 +12,10 @@
     
     .edu-col {
         margin-bottom: 0px;
+    }
+
+    .edu-black .back.karisma {
+        padding-top: 2%;
     }
 
     .organ-box {
@@ -52,18 +56,6 @@
     .edu-col {
         margin-bottom: 0px;
     }
-
-    /* .edu-black {
-        padding-bottom: 11%;
-    } */
-
-    /* .edu-black .back.karisma {
-        padding-top: 7% ;
-    } */
-/* 
-    .edu-yellow .back {
-        padding-top: 15%;
-    } */
 
     .organ-box {
         margin-top: -60px;

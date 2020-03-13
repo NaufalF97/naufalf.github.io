@@ -313,13 +313,8 @@ article .main-background {
     border-radius: 20px;
 }
 
-.edu-black .back p {
-    vertical-align: middle;
-}
-
 .edu-black .back.karisma {
-    padding-top: 11%;
-    padding-bottom: 11%;
+    padding-top: 9%;
 }
 
 /* Organization */
