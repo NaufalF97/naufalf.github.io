@@ -193,6 +193,7 @@ article .main-background {
 }
 
 .edu-black {
+    align-items: center;
     display: relative;
     background-color: #000000;
     border-radius: 20px;
@@ -215,6 +216,7 @@ article .main-background {
     background-color: #b7ff00;
     border-radius: 20px;
     padding: 10px;
+    align-items: center;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -282,7 +284,7 @@ article .main-background {
     position: absolute;
     top: 0px;
     left: 0px;
-    text-align: center;
+    align-items: center;
     padding: 9% 10px;
     width: 100%;
     height: 100%;
@@ -298,6 +300,7 @@ article .main-background {
     position: absolute;
     top: 0px;
     left: 0px;
+    align-items: center;
     padding: 17% 10px;
     text-align: center;
     width: 100%;
@@ -308,6 +311,10 @@ article .main-background {
     font-size: 1.3em;
     box-shadow: 3px 3px 8px #000000;
     border-radius: 20px;
+}
+
+.edu-black .back p {
+    vertical-align: middle;
 }
 
 .edu-black .back.karisma {
