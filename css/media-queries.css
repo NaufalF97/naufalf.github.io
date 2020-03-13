@@ -1,0 +1,150 @@
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    #organ-exp {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .edu-box {
+        margin-top: -20px;
+        margin-bottom: 120px;
+    }
+    
+    .edu-col {
+        margin-bottom: 0px;
+    }
+
+    .organ-box {
+        margin-top: -60px;
+    }
+
+    .organ-col {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .profile_photo {
+        width: 100%;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    .quote h3 {
+        font-size: 2em;
+    }
+
+    .portfolio h3 {
+        width: 70%;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 10px;
+    }
+
+    .edu-box {
+        margin-top: -20px;
+        margin-bottom: 120px;
+    }
+    
+    .edu-col {
+        margin-bottom: 0px;
+    }
+
+    .edu-black {
+        padding-bottom: 11%;
+    }
+
+    .organ-box {
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+
+    .organ-col {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .quote {
+        margin-top: 3% !important;
+    }
+
+    .identity {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .banner_info a {
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .banner_info span {
+        display: none;
+    }
+
+    .banner_info a {
+        margin: 2% 1%;
+    }
+
+    footer .btn {
+        font-size: 1.3em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:545px) {
+    body {
+        font-size: 9px;
+    }
+
+    .banner_info h3 {
+        font-size: 2em;
+    }
+
+    .profile_photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .quote h3 {
+        font-size: 1.5em;
+    }
+
+    .edu {
+        margin-right: 2%;
+        margin-left:-10%;
+    }
+
+    .organ {
+        margin-right: 5%;
+        margin-left: -12%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer .btn {
+        font-size: 1em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.1em;
+    }
+
+    .portfolio h3 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 15px;
+    }
+}
