@@ -178,14 +178,17 @@ article .main-background {
 
 .edu-box {
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .edu-col {
+    position: relative;
     margin-bottom: 20px;
+    padding: 7px;
     opacity: 0;
     transform: translateY(-30px);
     transition: transform 0.5s;
+    border-radius: 20px;
 }
 
 .edu-col.muncul {
@@ -194,8 +197,8 @@ article .main-background {
 }
 
 .edu-black {
+    position: relative;
     align-items: center;
-    display: relative;
     background-color: #000000;
     border-radius: 20px;
     padding: 10px;
@@ -203,17 +206,48 @@ article .main-background {
     height: 100%;
     box-sizing: border-box;
     box-shadow: 3px 3px 8px #000000;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    animation: floating 2s ease-in-out infinite reverse;
+    overflow: hidden;
 }
 
-.edu-black.sma {
-    margin-top: 60px;
+.edu-black span,
+.edu-yellow span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000095;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    font-size: 1.2em;
+}
+
+.edu-yellow span {
+    font-size: 1.1em;
+    padding: 10px 5px;
+}
+
+.karisma span {
+    padding: 40px 5px;
+}
+
+.sma span {
+    padding: 60px 5px;
+}
+
+.edu-black:hover span,
+.edu-yellow:hover span {
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
 }
 
 .edu-yellow {
-    display: relative;
+    position: relative;
     background-color: #b7ff00;
     border-radius: 20px;
     padding: 10px;
@@ -222,26 +256,7 @@ article .main-background {
     height: 100%;
     box-sizing: border-box;
     box-shadow: 3px 3px 8px #000000;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    margin-top: 30px;
-    animation: floating 2s ease-in-out infinite;
-}
-
-.edu-black:hover,
-.edu-yellow:hover{
-    cursor: pointer;
-    animation: rotate-x 1s ease-in-out forwards;
-}
-
-@keyframes rotate-x {
-    0% {
-        transform: rotateX(0deg);
-    }
-
-    100% {
-        transform: rotateX(180deg);
-    }
+    overflow: hidden;
 }
 
 .edu-col .date-yellow {
@@ -278,44 +293,6 @@ article .main-background {
     font-size: 1.5em;
     margin-top: 15px;
     margin-bottom: 3%;
-    color: #585757;
-}
-
-.edu-yellow .back {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    align-items: center;
-    padding: 9% 10px;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateX(180deg);
-    background-color: #000000;
-    font-size: 1.1em;
-    box-shadow: 3px 3px 8px #000000;
-    border-radius: 20px;
-}
-
-.edu-black .back {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    align-items: center;
-    padding: 17% 10px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateX(180deg);
-    background-color: #b7ff00;
-    font-size: 1.3em;
-    box-shadow: 3px 3px 8px #000000;
-    border-radius: 20px;
-}
-
-.edu-black .back.karisma {
-    padding-top: 9%;
 }
 
 /* Organization */
