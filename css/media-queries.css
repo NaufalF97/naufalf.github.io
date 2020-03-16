@@ -188,6 +188,10 @@
         padding: 0px 5px;
     }
 
+    .organ-yellow span {
+        padding: 10px 5px;
+    }
+
     footer .btn {
         font-size: 1em;
     }
