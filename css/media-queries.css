@@ -1,4 +1,14 @@
 /* Media Queries */
+@media screen and (max-width: 1201px) {
+    .edu-yellow span {
+        padding: 0px 5px;
+    }
+
+    .organ-yellow span {
+        padding: 15px 5px;
+    }
+}
+
 @media screen and (max-width: 995px) {
     #organ-exp {
         margin-top: 20px;
@@ -14,13 +24,25 @@
         margin-bottom: 10px;
     }
 
+    .edu-yellow span {
+        padding: 40px 5px;
+    }
+
     .organ-box {
-        margin-top: -30px;
+        margin-top: 0px;
         margin-bottom: -15px;
     }
 
     .organ-col {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .organ-yellow span {
+        padding: 22px 5px;
+    }
+
+    .organ-col.staff {
+        margin-bottom: 60px;
     }
 }
 
@@ -49,12 +71,16 @@
         margin-bottom: 10px;
     }
 
-    .organ-box {
-        margin-bottom: 30px;
+    .edu-black.karisma span {
+        padding: 20px 5px;
     }
 
-    .organ-col {
-        margin-bottom: 60px; 
+    .edu-yellow span {
+        padding: 40px 5px;
+    }
+
+    .organ-box {
+        margin-bottom: 30px;
     }
 }
 
@@ -83,8 +109,28 @@
         margin: 2% 1%;
     }
 
+    .edu-col {
+        margin-bottom: 10px;
+    }
+    
+    .edu-yellow span {
+        padding: 30px 5px;
+    }
+
     #organ-exp {
         margin-top: -15px;
+    }
+
+    .organ-box {
+        margin-bottom: 10px;
+    }
+
+    .organ-col {
+        margin-bottom: 20px;
+    }
+
+    .organ-yellow span {
+        padding: 35px 5px;
     }
 
     footer .btn {
@@ -113,19 +159,35 @@
     .quote h3 {
         font-size: 1.5em;
     }
-
-    .edu {
-        margin-right: 2%;
-        margin-left:-10%;
+        
+    .edu-black.karisma span {
+        font-size: 1.3em;
+        padding: 25px 5px;
     }
 
-    .organ {
-        margin-right: 5%;
-        margin-left: -12%;
+    .edu-yellow span {
+        font-size: 1.3em;
+        padding: 12px 5px;
+    }
+
+    .edu-black.sma span {
+        font-size: 1.3em;
+    }
+
+    .organ-black span {
+        padding: 40px 5px;
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:468px) {
+    .edu-black.karisma span {
+        padding: 15px 5px;
+    }
+
+    .edu-yellow span {
+        padding: 0px 5px;
+    }
+
     footer .btn {
         font-size: 1em;
     }
