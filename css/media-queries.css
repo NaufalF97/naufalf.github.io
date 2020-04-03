@@ -128,7 +128,7 @@
     }
 
     .banner_info a {
-        margin: 2% 1%;
+        margin: 2% 5%;
     }
 
     .banner_info a .icon {
@@ -242,5 +242,46 @@
 
     .portfolio h2 {
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 415px) {
+    header {
+        height: 880px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 9em;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        height: 770px !important;
+    }
+
+    .banner_info h1 {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        height: 700px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        height: 580px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 7em;
     }
 }
