@@ -424,6 +424,21 @@ article .main-background {
     box-shadow: 3px 3px 8px #000000;
 }
 
+#travel-landing {
+    font-size: 15px;
+    color: #707070;
+    font-weight: bold;
+}
+
+#travel-landing a {
+    text-decoration: none;
+    color: #707070;
+    transition: color 0.2s linear;
+}
+
+#travel-landing a:hover {
+    color: #b7ff00;
+}
 /* Footer */
 footer {
     background: #ffffff05;
