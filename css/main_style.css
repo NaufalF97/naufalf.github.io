@@ -425,6 +425,74 @@ article .main-background {
     box-shadow: 3px 3px 8px #000000;
 }
 
+.gallery.compprof img {
+    width: 750px;
+    height: 350px;
+    cursor: pointer;
+}
+
+ /* Overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    background-color: #00000099;
+}
+
+.overlay img {
+    width: 800px;
+    height: 500px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 3px #97979480;
+}
+
+.overlay .previous, .overlay .next {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 50px;
+    margin: auto 50px;
+    cursor: pointer;
+}
+
+.overlay .previous:hover,
+.overlay .next:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay a {
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.overlay a:hover {
+    transform: translateY(-2px);
+    color: #b7ff00;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay .close-btn {
+    display: block;
+    margin: 5px 10px 2px auto; 
+    font-size: 20px;
+    color: #979494;
+    text-align: right;
+    cursor: pointer;
+}
+
+.overlay .close-btn:hover {
+    color: red;
+    transition: color 0.2s ease-in-out;
+}
+
 #travel-landing {
     font-size: 15px;
     color: #707070;
