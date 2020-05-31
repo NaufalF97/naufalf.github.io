@@ -3,28 +3,26 @@ document.querySelector('.portfolio').addEventListener('click', function(e) {
     if(e.target.classList.contains('main-image-compprof')) {
         document.querySelector('#compprof').style.display = 'inline-block';
     };
-});
 
+});
 
 let urutan = ["0","1","2","3","4"];
 let i = 1;
-compprof.addEventListener('click', function(e) {
-    if(e.target.classList.contains('previous')) { 
-        document.querySelector('#compprof img').src = "img/company-profile-" + urutan[i--] + ".png";
-        if(i == 0 || i == 4) {
-            i = 3;
+    document.querySelector('#compprof').addEventListener('click', function(e) {
+        if(e.target.classList.contains('previous')) { 
+            document.querySelector('#compprof img').src = "img/company-profile-" + urutan[i--] + ".png";
+            if(i == 0 || i == 4) i = 3;
         };
-    };
-    if(e.target.classList.contains('next')) {
-        document.querySelector('#compprof img').src = 'img/company-profile-' + urutan[i++] + ".png";
-        if(i == 0 || i == 4) {
-            i = 1;
+        if(e.target.classList.contains('next')) {
+            document.querySelector('#compprof img').src = 'img/company-profile-' + urutan[i++] + ".png";
+            if(i == 0 || i == 4) i = 1;
         };
-    };
-    if (e.target.classList.contains('close-btn')) {
-        document.querySelector('#compprof').style.display = 'none';
-    };
-});
+        if (e.target.classList.contains('close-btn')) {
+            document.querySelector('#compprof').style.display = 'none';
+        };
+    });
+
+
 
 
 
