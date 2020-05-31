@@ -307,9 +307,9 @@
 
                 <h2 class="comp-profile">Simple Company Profile</h2>
                 <div class="gallery compprof">
-                    <img src="img/company-profile-1.png" alt="">
+                    <img class="main-image-compprof" src="img/company-profile-1.png" alt="">
                 </div>
-                <div class="overlay compprof">
+                <div class="overlay" id="compprof">
                     <p class="close-btn">Close {X}</p>
                     <p class="previous"> < </p>
                     <img src="img/company-profile-1.png" alt="">
@@ -399,62 +399,7 @@
     <script src="js/sidebar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            // init
-            $(".cdev").circlos();
-        });
-
-        $(window).scroll(function () {
-            // header
-            var winScroll = $(this).scrollTop();
-
-            $('.banner_info').css({
-                'transform': 'translate(0px, ' + winScroll / 10 + '%)'
-            })
-
-            // edu dan organ
-            if (winScroll > $('.background').offset().top - 250) {
-                $('.edu-col').each(function (i) {
-                    setTimeout(function () {
-                        $('.edu-col').eq(i).addClass('muncul');
-                    }, 300 * (i + 1))
-                })
-            }
-
-            if (winScroll > $('#organ-exp').offset().top - 300) {
-                $('.organ-col').each(function (i) {
-                    setTimeout(function () {
-                        $('.organ-col').eq(i).addClass('muncul');
-                    }, 300 * (i + 1))
-                })
-            }
-        })
-
-        // Carousel Portfolio
-
-        $('.owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 10,
-            lazyLoad: true,
-            merge: true,
-            video: true,
-            responsive: {
-                480: {
-                    items: 1
-                },
-
-                678: {
-                    items: 1
-                },
-
-                960: {
-                    items: 1
-                }
-            }
-        });
-    </script>
+    <script src="js/myscript.js"></script>
 
 
 </body>
