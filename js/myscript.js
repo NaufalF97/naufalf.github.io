@@ -67,27 +67,3 @@ $(window).scroll(function () {
         })
     }
 })
-
-// Carousel Portfolio
-
-$('.owl-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 10,
-    lazyLoad: true,
-    merge: true,
-    video: true,
-    responsive: {
-        480: {
-            items: 1
-        },
-
-        678: {
-            items: 1
-        },
-
-        960: {
-            items: 1
-        }
-    }
-});
