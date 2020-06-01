@@ -2,6 +2,7 @@
 document.querySelector('.portfolio').addEventListener('click', function(e) {
     if(e.target.classList.contains('main-image-compprof')) {
         document.querySelector('#compprof').classList.add('on');
+        document.querySelector('#compprof img').src = 'img/company-profile-1.png';
     };
 
 });
