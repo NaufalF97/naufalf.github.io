@@ -1,24 +1,24 @@
         // Javascript
 document.querySelector('.portfolio').addEventListener('click', function(e) {
     if(e.target.classList.contains('main-image-compprof')) {
-        document.querySelector('#compprof').style.display = 'inline-block';
+        document.querySelector('#compprof').classList.add('on');
     };
 
 });
 
-let urutan = ["0","1","2","3","4"];
-let i = 1;
+let urutan = ["1","2","3"];
+let i = 0;
     document.querySelector('#compprof').addEventListener('click', function(e) {
         if(e.target.classList.contains('previous')) { 
             document.querySelector('#compprof img').src = "img/company-profile-" + urutan[i--] + ".png";
-            if(i == 0 || i == 4) i = 3;
+            if(i == -1) i = 2;
         };
         if(e.target.classList.contains('next')) {
             document.querySelector('#compprof img').src = 'img/company-profile-' + urutan[i++] + ".png";
-            if(i == 0 || i == 4) i = 1;
+            if(i == 3) i = 0;
         };
         if (e.target.classList.contains('close-btn')) {
-            document.querySelector('#compprof').style.display = 'none';
+            document.querySelector('#compprof').classList.remove('on');
         };
     });
 
