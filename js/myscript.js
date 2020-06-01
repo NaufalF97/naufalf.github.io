@@ -1,5 +1,5 @@
         // Javascript
-
+// Overlay portfolio
 let urutan = ["1","2","3"];
 let i = 0;
 
@@ -34,22 +34,6 @@ document.querySelector('.portfolio').addEventListener('click', function(e) {
         mainImage('#travel-landing-over', 'img/Travel-LP-')
     }
 });
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // JQuery
 
