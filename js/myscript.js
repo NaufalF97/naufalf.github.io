@@ -5,7 +5,7 @@ let i = 0;
 
 function overlay(id, gambar) {
     document.querySelector(id).addEventListener('click', function(e) {
-        if(e.target.classList.contains('previous')) { 
+        if(e.target.classList.contains('previous') || e.target.classList.contains('previousRsp')) { 
             document.querySelector(id + ' img').src = gambar + urutan[i--] + ".png";
             if(i == -1) i = 2;
         };

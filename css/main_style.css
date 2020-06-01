@@ -401,12 +401,6 @@ article .main-background {
 }
 
 /*Portfolio */
-.owl-carousel {
-    max-width: 75%;
-    display: inline-block !important;
-    text-align: center !important;
-}
-
 .hr_portfolio {
     width: 60%;
     border: solid 1px #979494;
@@ -439,16 +433,15 @@ article .main-background {
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 0px;
     z-index: 9999999;
     background-color: #00000099;
-    scale: 0;
-    transform: rotateZ(180deg);
+    transform: scale(0) rotateZ(180deg);
     transition: all 0.5s ease-in-out;
 }
 
 .overlay.on {
-    scale: 1;
-    transform: rotateZ(0deg);
+    transform: scale(1) rotateZ(0deg);
 }
 
 .overlay img {
@@ -456,6 +449,7 @@ article .main-background {
     height: 500px;
     margin-top: 25px;
     box-shadow: 2px 2px 3px #97979480;
+    cursor: pointer;
 }
 
 .overlay .previous, .overlay .next {
@@ -464,12 +458,16 @@ article .main-background {
     font-size: 50px;
     margin: auto 50px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay .previousRsp {
+    display: none;
 }
 
 .overlay .previous:hover,
 .overlay .next:hover {
     transform: translateY(-5px);
-    transition: all 0.2s ease-in-out;
 }
 
 .overlay a {
@@ -479,12 +477,12 @@ article .main-background {
     color: white;
     font-size: 30px;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
 }
 
 .overlay a:hover {
     transform: translateY(-2px);
-    color: #b7ff00;
-    transition: all 0.2s ease-in-out;
+    color: #b7ff00;  
 }
 
 .overlay .close-btn {
@@ -494,11 +492,11 @@ article .main-background {
     color: #979494;
     text-align: right;
     cursor: pointer;
+    transition: color 0.2s ease-in-out;
 }
 
 .overlay .close-btn:hover {
     color: red;
-    transition: color 0.2s ease-in-out;
 }
 
 #travel-landing {
