@@ -3,25 +3,38 @@ document.querySelector('.portfolio').addEventListener('click', function(e) {
     if(e.target.classList.contains('main-image-compprof')) {
         document.querySelector('#compprof').classList.add('on');
         document.querySelector('#compprof img').src = 'img/company-profile-1.png';
-    };
-
+        overlay('#compprof', 'img/company-profile-');
+    } else if(e.target.classList.contains('main-image-gsj')) {
+        document.getElementById('gsj').classList.add('on');
+        document.querySelector('#gsj img').src = 'img/game-suit-jawa-1.png';
+        overlay('#gsj', 'img/game-suit-jawa-');
+    } else if(e.target.classList.contains('main-image-travel-landing')) {
+        document.getElementById('travel-landing-over').classList.add('on');
+        document.querySelector('#travel-landing-over img').src = 'img/Travel-LP-1.png';
+        overlay('#travel-landing-over', 'img/Travel-LP-');
+    }
 });
 
 let urutan = ["1","2","3"];
 let i = 0;
-    document.querySelector('#compprof').addEventListener('click', function(e) {
+
+function overlay(id, gambar) {
+    document.querySelector(id).addEventListener('click', function(e) {
         if(e.target.classList.contains('previous')) { 
-            document.querySelector('#compprof img').src = "img/company-profile-" + urutan[i--] + ".png";
+            document.querySelector(id + ' img').src = gambar + urutan[i--] + ".png";
             if(i == -1) i = 2;
         };
         if(e.target.classList.contains('next')) {
-            document.querySelector('#compprof img').src = 'img/company-profile-' + urutan[i++] + ".png";
+            document.querySelector(id + ' img').src = gambar + urutan[i++] + '.png';
             if(i == 3) i = 0;
         };
         if (e.target.classList.contains('close-btn')) {
-            document.querySelector('#compprof').classList.remove('on');
+            document.querySelector(id).classList.remove('on');
         };
     });
+    
+};
+    
 
 
 

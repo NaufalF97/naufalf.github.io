@@ -425,7 +425,7 @@ article .main-background {
     box-shadow: 3px 3px 8px #000000;
 }
 
-.gallery.compprof img {
+.main-gallery img {
     width: 750px;
     height: 350px;
     cursor: pointer;
