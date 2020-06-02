@@ -8,8 +8,7 @@ function overlay(id, gambar) {
         if(e.target.classList.contains('previous') || e.target.classList.contains('previousRsp')) { 
             document.querySelector(id + ' img').src = gambar + urutan[i--] + ".png";
             if(i == -1) i = 2;
-        };
-        if(e.target.classList.contains('next')) {
+        } else if(e.target.classList.contains('next')) {
             document.querySelector(id + ' img').src = gambar + urutan[i++] + '.png';
             if(i == 3) i = 0;
         };
@@ -19,7 +18,7 @@ function overlay(id, gambar) {
     });
 };
 
-function mainImage(id, gambar) {
+function panggilOverlay(id, gambar) {
     document.querySelector(id).classList.add('on');
     document.querySelector(id + ' img').src = gambar + '1.png';
     overlay(id, gambar);
@@ -27,11 +26,11 @@ function mainImage(id, gambar) {
 
 document.querySelector('.portfolio').addEventListener('click', function(e) {
     if(e.target.classList.contains('main-image-compprof')) {
-        mainImage('#compprof', 'img/company-profile-');
+        panggilOverlay('#compprof', 'img/company-profile-');
     } else if(e.target.classList.contains('main-image-gsj')) {
-        mainImage('#gsj', 'img/game-suit-jawa-');
+        panggilOverlay('#gsj', 'img/game-suit-jawa-');
     } else if(e.target.classList.contains('main-image-travel-landing')) {
-        mainImage('#travel-landing-over', 'img/Travel-LP-')
+        panggilOverlay('#travel-landing-over', 'img/Travel-LP-')
     }
 });
 

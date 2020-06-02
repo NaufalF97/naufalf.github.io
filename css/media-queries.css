@@ -107,10 +107,10 @@
 
     .cdev div span {
         text-align: center;
-        line-height: 90px !important;
-        width: 90px !important;
-        height: 90px !important;
-        font-size: 30px !important;
+        line-height: 75px !important;
+        width: 75px !important;
+        height: 75px !important;
+        font-size: 20px !important;
     }
 
     .abilities p {
