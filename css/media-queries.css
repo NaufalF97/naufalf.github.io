@@ -10,50 +10,59 @@
     }
 
     .banner_info h1 {
-        font-size: 15em;
+        font-size: 12em;
     }
 
     .banner_info h3 {
-        font-size: 4.5em;
-    }
-
-    .banner_info a {
-        font-size: 2.7em;
-    }
-
-    .banner_info a:hover {
-        font-size: 2.8em;
-    }
-
-    .profile_photo img {
-        width: 430px;
-        height: 430px;
-    }
-
-    .profile .quote h3 {
         font-size: 3.5em;
     }
 
+    .banner_info a {
+        font-size: 2em;
+    }
+
+    .banner_info a:hover {
+        font-size: 2.1em;
+    }
+
+    .profile_photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .profile .quote h3 {
+        font-size: 2.5em;
+    }
+
     .identity {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .profile h1,
     .background h1,
     .abilities h1,
     .portfolio h1 {
-        font-size: 6.5em;
+        font-size: 6em;
     }
 
     .background h2,
     .abilities h2,
     .portfolio h2 {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .karisma h3 {
+        margin-top: 80px;
+    }
+
+    .edu-yellow h3 {
+        margin-top: 30px;
     }
 
     .edu-yellow h3,
     .edu-black h3 {
-        font-size: 4em;
+        font-size: 3em;
+        margin-bottom: 100px;
     }
 
     .edu-yellow span,
@@ -71,7 +80,7 @@
     }
 
     .organ-col h3 {
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
     .organ-col .date-yellow, .organ-col .date-black {
@@ -92,20 +101,20 @@
     }
 
     .cdev div {
-        width: 125px !important;
-        height: 125px !important;
+        width: 115px !important;
+        height: 115px !important;
     }
 
     .cdev div span {
         text-align: center;
-        line-height: 100px !important;
-        width: 100px !important;
-        height: 100px !important;
-        font-size: 40px !important;
+        line-height: 90px !important;
+        width: 90px !important;
+        height: 90px !important;
+        font-size: 30px !important;
     }
 
     .abilities p {
-        margin: 40px 0px 15% 30px;
+        margin: 40px 0px 15% 18px;
         font-size: 2.3em;
     }
 
