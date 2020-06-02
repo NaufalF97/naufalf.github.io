@@ -12,8 +12,7 @@ body {
 #main-container {
     background: #13131395;
     align-items: center;
-    margin: 5% auto;
-    box-sizing: border-box;
+    margin: 5% 80px;
     border-radius: 35px;
     padding: 5%;
     text-align: center;
@@ -29,7 +28,7 @@ header {
     padding-top: 8%;
     padding-bottom: 12%;
     width: 100%;
-    height: 1080px;
+    height: 718px;
     box-shadow: 3px 3px 7px #000000;
     box-sizing: border-box;
 }
@@ -127,6 +126,8 @@ article .main-background {
     box-shadow: 2px 2px 5px #b7ff00;
     border-radius: 35px;
     margin-bottom: 3%;
+    width: 300px;
+    height: 300px;
 }
 
 .profile .quote {
@@ -533,6 +534,7 @@ footer .btn{
     background-color: #979494;
     border: none;
     box-shadow: 1px 1px 5px #00000080;
+    transition: all 0.1s ease-in-out;
 }
 
 footer .btn:hover {
