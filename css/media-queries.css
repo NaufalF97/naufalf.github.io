@@ -100,19 +100,6 @@
         padding: 70px 5px;
     }
 
-    .cdev div {
-        width: 115px !important;
-        height: 115px !important;
-    }
-
-    .cdev div span {
-        text-align: center;
-        line-height: 75px !important;
-        width: 75px !important;
-        height: 75px !important;
-        font-size: 20px !important;
-    }
-
     .abilities p {
         margin: 40px 0px 15% 18px;
         font-size: 2.3em;
