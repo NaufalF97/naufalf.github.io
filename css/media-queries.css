@@ -1,0 +1,573 @@
+/* Media Queries */
+@media (min-width: 1919px) {
+    header {
+        height: 1080px;
+    }
+
+    #main-container {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .banner_info h1 {
+        font-size: 12em;
+    }
+
+    .banner_info h3 {
+        font-size: 3.5em;
+    }
+
+    .banner_info a {
+        font-size: 2em;
+    }
+
+    .banner_info a:hover {
+        font-size: 2.1em;
+    }
+
+    .profile_photo img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .profile .quote h3 {
+        font-size: 2.5em;
+    }
+
+    .identity {
+        font-size: 2.5em;
+    }
+
+    .profile h1,
+    .background h1,
+    .abilities h1,
+    .portfolio h1 {
+        font-size: 6em;
+    }
+
+    .background h2,
+    .abilities h2,
+    .portfolio h2 {
+        font-size: 2.5em;
+    }
+
+    .karisma h3 {
+        margin-top: 80px;
+    }
+
+    .edu-yellow h3 {
+        margin-top: 30px;
+    }
+
+    .edu-yellow h3,
+    .edu-black h3 {
+        font-size: 3em;
+        margin-bottom: 100px;
+    }
+
+    .edu-yellow span,
+    .edu-black span {
+        font-size: 1.4em;
+    }
+
+    .edu-yellow span {
+        padding: 4px;
+    }
+
+    .date-black,
+    .date-yellow {
+        font-size: 2.5em;
+    }
+
+    .organ-col h3 {
+        font-size: 2.7em;
+    }
+
+    .organ-col .date-yellow, .organ-col .date-black {
+        font-size: 2.3em;
+    }
+
+    .organ-yellow span,
+    .organ-black span {
+        font-size: 2.5em;
+    }
+
+    .organ-yellow span {
+        padding: 30px 5px;
+    }
+
+    .organ-black span {
+        padding: 70px 5px;
+    }
+
+    .cdev div {
+        width: 115px !important;
+        height: 115px !important;
+    }
+
+    .cdev div span {
+        text-align: center;
+        line-height: 90px !important;
+        width: 90px !important;
+        height: 90px !important;
+        font-size: 30px !important;
+    }
+
+    .abilities p {
+        margin: 40px 0px 15% 18px;
+        font-size: 2.3em;
+    }
+
+    .portfolio h3 {
+        font-size: 2.5em;
+    }
+
+    .main-gallery img {
+        width: 900px;
+        height: 450px;
+    }
+
+    #travel-landing {
+        font-size: 2em;
+    }
+
+    .overlay img {
+       width: 1100px;
+       height: 600px;
+       margin: 80px 40px 10px 40px;
+    }
+
+    .overlay .previous, .overlay .next {
+        font-size: 100px;
+    }
+
+    .overlay a {
+        font-size: 50px;
+    }
+
+    .overlay .close-btn {
+        font-size: 30px;
+    }
+
+    footer .btn {
+        font-size: 2.3em;
+        width: 15%;
+        transition: all 0.1s ease-in-out;
+    }
+
+    footer .btn:hover {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1201px) {
+    .edu-yellow span {
+        padding: 0px 5px;
+    }
+
+    .organ-yellow span {
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .overlay img {
+        width: 700px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .banner_info h3 {
+        margin-bottom: 80px;
+    }
+
+    .banner_info a .arrow {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    #organ-exp {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .edu-box {
+        margin-top: -20px;
+        margin-bottom: 70px;
+    }
+    
+    .edu-col {
+        margin-bottom: 10px;
+    }
+
+    .edu-yellow span {
+        padding: 40px 5px;
+    }
+
+    .organ-box {
+        margin-top: 0px;
+        margin-bottom: -15px;
+    }
+
+    .organ-col {
+        margin-bottom: 20px;
+    }
+
+    .organ-yellow span {
+        padding: 22px 5px;
+    }
+
+    .organ-col.staff {
+        margin-bottom: 60px;
+    }
+
+    .main-gallery img {
+        width: 600px;
+    }
+
+    .overlay img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 874px) {
+    .overlay img {
+        display: block;
+        margin: 20px auto 0px auto;
+    }
+
+    .overlay .previous {
+        display: none;
+    }
+
+    .overlay .previousRsp, 
+    .overlay .next {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 50px;
+        margin: 5px 20px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .overlay .previousRsp:hover {
+        transform: translateY(-5px);
+    }
+
+    .overlay a {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 837px) {
+    .overlay .close-btn {
+        margin-right: 40px;
+    }
+
+    .overlay img {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width:777px) {
+    .profile_photo {
+        width: 100%;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    .quote h3 {
+        font-size: 2em;
+    }
+
+    .portfolio h3 {
+        width: 70%;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 10px;
+    }
+    
+    .edu-col {
+        margin-bottom: 10px;
+    }
+
+    .edu-black.karisma span {
+        padding: 20px 5px;
+    }
+
+    .edu-yellow span {
+        padding: 40px 5px;
+    }
+
+    .organ-box {
+        margin-bottom: 30px;
+    }
+    
+    .main-gallery img {
+        width: 450px;
+    }
+
+    .overlay .wrap-isi {
+        margin-right: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .quote {
+        margin-top: 3% !important;
+    }
+
+    .identity {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .banner_info h1 {
+        margin-top: 70px;
+    }
+
+    .banner_info a {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 670px) {
+    .overlay img {
+        width: 550px;
+        height: 400px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .banner_info h1 {
+        margin-top: 50px;
+    }
+    .banner_info span {
+        display: none;
+    }
+
+    .banner_info a {
+        margin: 2% 5%;
+    }
+
+    .banner_info a .icon {
+        font-size: 32px;
+    }
+
+    .edu-col {
+        margin-bottom: 10px;
+    }
+    
+    .edu-yellow span {
+        padding: 30px 5px;
+    }
+
+    #organ-exp {
+        margin-top: -15px;
+    }
+
+    .organ-box {
+        margin-bottom: 10px;
+    }
+
+    .organ-col {
+        margin-bottom: 20px;
+    }
+
+    .organ-yellow span {
+        padding: 35px 5px;
+    }
+
+    footer .btn {
+        font-size: 1.3em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 578px) {
+    .overlay img {
+        width: 350px;
+        height: 300px;
+        margin-top: 85px;
+    }
+}
+
+@media screen and (max-width:545px) {
+    body {
+        font-size: 9px;
+    }
+
+    .banner_info h1 {
+        font-size: 6rem;
+        margin-top: 70px;
+    }
+
+    .banner_info h3 {
+        font-size: 2.5em;
+    }
+
+    .banner_info a .arrow {
+        font-size: 1.2em;
+    }
+
+    .profile_photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .quote h3 {
+        font-size: 1.5em;
+    }
+        
+    .edu-black.karisma span {
+        font-size: 1.3em;
+        padding: 25px 5px;
+    }
+
+    .edu-yellow span {
+        font-size: 1.3em;
+        padding: 12px 5px;
+    }
+
+    .edu-black.sma span {
+        font-size: 1.3em;
+    }
+
+    .organ-black span {
+        padding: 40px 5px;
+    }
+}
+
+@media (max-width: 535px) {
+    .main-gallery img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .edu-black.karisma span {
+        padding: 15px 5px;
+    }
+
+    .edu-yellow span {
+        padding: 0px 5px;
+    }
+
+    .organ-yellow span {
+        padding: 10px 5px;
+    }
+
+    footer .btn {
+        font-size: 1em;
+    }
+
+    footer .btn:hover {
+        font-size: 1.1em;
+    }
+
+    .portfolio h3 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 417px) {
+    header {
+        height: 880px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 9em;
+        margin-top: 150px;
+    }
+
+    .wrap-isi {
+        position: fixed;
+        top: 10px;
+        left: 34px;
+    }
+
+    .overlay img {
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .overlay .close-btn {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 378px) {
+    header {
+        height: 770px !important;
+    }
+
+    .banner_info h1 {
+        margin-top: 90px;
+    }
+
+    .main-gallery img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .overlay img {
+        width: 320px;
+        height: 280px;
+    }
+
+    .overlay .wrap-isi {
+        left: 30px;
+    }
+
+    .overlay .close-btn {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 362px) {
+    header {
+        height: 700px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 8em;
+    }
+
+    .overlay .wrap-isi {
+        left: 21px;
+    }
+}
+
+@media (max-width: 327px) {
+    header {
+        height: 580px !important;
+    }
+
+    .banner_info h1 {
+        font-size: 7em;
+    }
+
+    .overlay img {
+        width: 280px;
+        height: 250px;
+    }
+
+    .overlay img {
+        margin-top: 80px;
+    }
+}
