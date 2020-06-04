@@ -19,7 +19,7 @@ body {
     border-radius: 35px;
     padding: 5%;
     text-align: center;
-    box-shadow: 3px 3px 7px #414141;
+    box-shadow: 0px 0px 15px #41414180;
 }
 
 header {
@@ -135,7 +135,7 @@ article .main-background {
 
 .profile .quote {
     background-color: #000000;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 0px 0px 5px #41414170;
     text-align: center;
     padding: 11% 1%;
     border-radius: 50%;
@@ -211,7 +211,7 @@ article .main-background {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 0px 0px 5px #41414170;
     overflow: hidden;
 }
 
@@ -261,7 +261,7 @@ article .main-background {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 0px 0px 5px #41414170;
     overflow: hidden;
 }
 
@@ -311,7 +311,7 @@ article .main-background {
 .organ-yellow {
     position: relative;
     background-color: #b7ff00;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 0px 0px 5px #41414175;
     border-radius: 20px;
     width: 100%;
     height: 100%;
@@ -340,7 +340,7 @@ article .main-background {
 .organ-black {
     position: relative;
     background-color: #000000;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 0px 0px 5px #41414175;
     border-radius: 20px;
     width: 100%;
     height: 100%;
