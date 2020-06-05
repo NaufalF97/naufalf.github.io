@@ -393,6 +393,15 @@ article {
     border: solid 1px #979494;
 }
 
+.icon-abilities {
+    font-size: 5.5em;
+    color: #b7ff00;
+}
+
+.git {
+    margin-bottom: -5%;
+}
+
 /*Portfolio */
 .hr_portfolio {
     width: 60%;

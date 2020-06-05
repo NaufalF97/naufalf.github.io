@@ -35,12 +35,6 @@ document.querySelector('.portfolio').addEventListener('click', function(e) {
 });
 
         // JQuery
-
-$(document).ready(function () {
-    // init
-    $(".cdev").circlos();
-});
-
 $(window).scroll(function () {
     // header
     var winScroll = $(this).scrollTop();
