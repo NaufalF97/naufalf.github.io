@@ -395,7 +395,8 @@ article {
 
 .icon-abilities {
     font-size: 5.5em;
-    color: #b7ff00;
+    color: #000000 !important;
+    text-shadow: 2px 2px 3px #b7ff00 !important;
 }
 
 .git {
